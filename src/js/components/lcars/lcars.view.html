@@ -1,0 +1,33 @@
+<!-- <div class="box">
+  <div class="dot left-dot valign-wrapper">
+    <section class="black-center center-align"></section>
+  </div>
+</div> -->
+
+<section>
+  <div class="ship-section container">
+    <div class="enterprise-box">
+      <h6 class="ship-name">USS Enterprise</h6>
+      <img class="enterprise-picture" src="src/images/enterprise.jpeg">
+      <div class="crew-logs-box">
+        <div class="rectangle yellow-border valign-wrapper center-align">
+          <p class="center-align">Accessing Crew Logs<br>Please Wait</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section>
+  <div class="info-section container center-align">
+    <button ng-click="lcarsCtrl.commands[2]['computer get me a news article from *source']('espn')">News</button>
+    <button ng-click="lcarsCtrl.commands[0]['computer what is the weather like today']()">Weather</button>
+    <h1 class="idk" ng-if="lcarsCtrl.dataHeader">{{ lcarsCtrl.dataHeader }}</h1>
+    <p class="idk" ng-if="lcarsCtrl.description">{{ lcarsCtrl.description }}</p>
+    <p class="idk" ng-if="lcarsCtrl.temperature">{{ lcarsCtrl.temperature }}</p>
+  </div>
+</section>
